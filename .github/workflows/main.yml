@@ -1,0 +1,17 @@
+name: A workflow for my Hello World file
+on: push
+
+jobs:
+  build:
+    name: hello world actions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./action-a
+        with:
+          MY_NAME: "5 Dolla Sucky Sucky Mona"
+
+      - uses: actions/checkout@v1
+      - uses: ./action-a
+        with:
+          MY_NAME: "Dirty Flirty Berty"
