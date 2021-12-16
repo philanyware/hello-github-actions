@@ -3,7 +3,7 @@ on: push
 
 jobs:
   build:
-    name: Mona hello world action
+    name: hello world actions
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -11,9 +11,6 @@ jobs:
         with:
           MY_NAME: "5 Dolla Sucky Sucky Mona"
 
-    name: Berty hello world action
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v1
       - uses: ./action-a
         with:
